@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <table border="1">
+            <form action = "/update.php" method="post">
+                <input type="hidden" name="type" value="user"/>
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="id" size="10">
+                        <input type="button" value="중복조회">
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="password" name="pwd" size="10">
+                        확인
+                        <input type="password" name="pwd2" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name" size="10"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="text" name="email" size="10"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <input type="radio" name="sex" value="m"> 남
+                        <input type="radio" name="sex" value="f"> 여
+                    </td>
+                </tr>
+                <tr>
+                    <td>지역</td>
+                    <td>
+                        <select name="address">
+                            <option value="seoul">서울</option>
+                            <option value="busan">부산</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="accept"> 약관에 동의합니다.</td>
+                </tr>
+            </form>
+        </table>
+        <input type="submit" name="enroll" value="회원가입">
+    </body>
+</html>
