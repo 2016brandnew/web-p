@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment4</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>아이디</th>
+            <td><input type="text" name="name" size="10"/>
+                <input type="button" value="중복조회"/>
+            </td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="text" name="name" size="10"/>
+                <b>확인</b> <input type="text" name="name" size="10"/>
+            </td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td><input type="text" name="name" size="10"/></td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input type="text" name="name" size="10"/></td>
+        </tr>
+        <tr>
+            <th>성별</th>
+            <td><input type="radio" name="sex" value="man"/>남
+                <input type="radio" name="sex" value="woman"/>여
+            </td>
+            <tr>
+                <th>지역</th>
+                <td>
+                    <select name="area">
+                        <option value="seoul">서울</option>
+                        <option value="incheon">인천</option>
+                        <option value="gyeonggi">경기</option>
+                        <option value="gangwon">강원</option>
+                        <option value="gyeongbuk">경북</option>
+                        <option value="gyeongnam">경남</option>
+                        <option value="jeonbuk">전북</option>
+                        <option value="jeonnam">전남</option>
+                        <option value="chungbuk">충북</option>
+                        <option value="chungnam">충남</option>
+                        <option value="jeju">제주</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox"/>약관에 동의합니다.</td>
+            </tr>
+    </table>
+    <input type="button" value="회원가입"/>
+</body>
+</html>
