@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to JavaScript</title>
+    <script>
+    </script>
+</head>
+<body>
+    <h1><a href="web.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          document.querySelector('#night_day').value='day';
+        } else {
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';
+          document.querySelector('#night_day').value='night';  
+        }
+    ">
+    <ol>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+    </ol>
+    <h2>WEB</h2>
+    <p>The World Wide Web (WWW), also called the Web, is an information space where documents and other web<br> 
+        resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible<br> 
+        via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web<br> browser in 1990 while employed at CERN in Switzerland.[2][3] The browser was released
+        outside CERN in 1991,<br> first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+</body>
+</html>
