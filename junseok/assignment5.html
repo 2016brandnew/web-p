@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination Example</title>
+   <style>
+       .pagination {
+           display: inline-block;   /*블록생성*/
+       }
+       
+       .pagination a {
+         background-color:rgb(76, 86, 95);
+         color: white;  /*글자색*/
+         float: left;   
+         padding: 8px 16px;
+         margin: 0 0.5px;
+         text-decoration: none;
+       }
+        
+       .pagination a.current {
+          background-color:royalblue;
+          color: white;
+         }
+
+       .pagination a:hover:not(.active) {
+          background-color:rgb(202, 199, 199);   /*링크배경색*/
+          color:gold;
+         }
+         
+   </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <a href="#" class="direction"><span class='arrow' style=color:gold>&lsaquo;&lsaquo;이전</span></a>
+        <a href="#">11</a>
+        <a href="#">12</a>
+        <a href="#">13</a>
+        <a href="#">14</a>
+        <a href="#" class="current">15</a>
+        <a href="#">16</a>
+        <a href="#">17</a>
+        <a href="#">18</a>
+        <a href="#">19</a>
+        <a href="#">20</a>
+        <a href="#" class="direction"><span class='arrow' style=color:gold>&rsaquo;&rsaquo;다음</span></a>
+    </div>
+</body>
+</html>
